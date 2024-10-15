@@ -544,4 +544,114 @@ header {
     }
   }
   /* End Gallery */
-    
+
+/* Start Contact */
+.contact {
+    padding: var(--main-padding);
+  }
+  .contact iframe {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 25px;
+  }
+  .contact .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .contact .details .info {
+    width: 49%;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    background-color: #f5f5f5;
+  }
+  .contact .details .info .icon {
+    min-width: 50px;
+    min-height: 50px;
+    background-color: #ce1212;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .contact .details .info .icon i {
+    font-size: 18px;
+    color: #fff;
+  }
+  .contact .details .info .address-contact h3 {
+    color: #7d7d7d;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .contact .details .info .address-contact p a {
+    color: #000;
+  }
+  .contact form {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+    box-shadow: 0 0 1.875rem #00000014;
+  }
+  .contact form input,
+  .contact form textarea {
+    padding: 15px;
+    border: 2px solid #eee;
+    color: #212529;
+    transition: var(--animation-duration);
+  }
+  .contact form input:focus,
+  .contact form textarea:focus {
+    outline: none;
+    border-color: #ce1212;
+  }
+  .contact form .input-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .contact form .input-group input {
+    flex-basis: 49%;
+  }
+  .contact form .send-message {
+    padding: 12px 40px;
+    font-size: 15px;
+    width: fit-content;
+    background-color: #ce1212;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: var(--animation-duration);
+  }
+  .contact form .send-message:hover {
+    background-color: #e61414;
+  }
+  
+  @media screen and (max-width: 1202px) {
+    .contact form .input-group input {
+      flex-basis: 100%;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .contact .details .info {
+      width: 48%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .contact .details .info {
+      width: 100%;
+    }
+  }
+  /* End Contact */    
