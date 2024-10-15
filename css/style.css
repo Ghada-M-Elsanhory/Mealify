@@ -400,4 +400,86 @@ header {
     }
   }
   /* End Header */
-  
+
+/* Start Chefs */
+.chefs {
+    padding: var(--main-padding);
+  }
+  .chefs .chefs-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  .chefs .chefs-cards .card {
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: var(--animation-duration);
+  }
+  .chefs .chefs-cards .card:hover {
+    transform: scale(1.07);
+  }
+  .chefs .chefs-cards .card:hover .social-box {
+    right: 10px;
+  }
+  .chefs .chefs-cards .card img {
+    width: 100%;
+  }
+  .chefs .chefs-cards .card .image {
+    position: relative;
+  }
+  .chefs .chefs-cards .card .image::after {
+    content: "";
+    width: 100%;
+    height: 60px;
+    background: url(../images/team-shape.svg) repeat-x;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
+  .chefs .chefs-cards .card .card-content {
+    padding: 10px 25px 25px;
+  }
+  .chefs .chefs-cards .card .card-content h3 {
+    font-family: var(--font-secondary);
+  }
+  .chefs .chefs-cards .card .card-content span {
+    color: #7f7f9b;
+    font-size: 14px;
+    margin: 10px 15px;
+    display: block;
+  }
+  .chefs .chefs-cards .card .card-content p {
+    color: #7f7f9b;
+    font-size: 15px;
+    font-style: italic;
+  }
+  .chefs .chefs-cards .card .social-box {
+    background-color: #ffffff4d;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    right: -50px;
+    transition: 0.4s 0.5s;
+  }
+  .chefs .chefs-cards .card .social-box li i {
+    font-size: 18px;
+    padding: 10px 5px;
+    color: #37373f66;
+    transition: var(--animation-duration);
+  }
+  .chefs .chefs-cards .card .social-box li i:hover {
+    color: #37373fe6;
+  }
+  @media screen and (max-width: 767px) {
+    .chefs .chefs-cards {
+      flex-direction: column;
+    }
+  }
+  /* End Chefs */  
